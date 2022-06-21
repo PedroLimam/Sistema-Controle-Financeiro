@@ -93,6 +93,7 @@ form button{
     padding: 5px;
     margin-bottom: 5px;
     position: relative;
+    text-align: center;
 }
 #contas .conta-debito::before {
     content: '';
@@ -110,3 +111,54 @@ form button{
     height: -webkit-fill-available;
     position: absolute;
 }
+.box-conta img{
+    transition: all 400ms ease;
+}
+
+.box-conta img:hover{
+    transform: translateY(-1px);
+}
+
+@media (max-width: 767px){
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body{
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #debitos, #creditos{
+        width: fit-content;
+        min-width: 112px;
+    }
+
+    #contas{
+        width: 100%;
+    } 
+
+    form button {
+        width: 100%;
+    }
+  }

@@ -46,10 +46,27 @@ class SaveAccounts{
     insertAccount(){
         const containerContas = document.querySelector("#contas")
 
+        const boxConta = document.createElement("div")
+        boxConta.classList.add('box-conta')
+        boxConta.style.cssText = `position: relative; z-index: 1;`
+
+        const imgTrash = document.createElement("img")
+        imgTrash.src = "lixeira.png"
+        imgTrash.alt = "ilustração lixeira"
+        imgTrash.style.cssText = `
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        z-index: 2;
+        `
+        boxConta.appendChild(imgTrash)
+
         const conta = document.createElement("p")
         conta.insertAdjacentText('afterbegin', `${this.nome} R$ ${this.checkerNumberFormatting()} ${this.valor}`)
         conta.classList.add(`${this.id}`)
-        containerContas.insertAdjacentElement('beforeend', conta)
+        boxConta.appendChild(conta)
+
+        containerContas.insertAdjacentElement('beforeend', boxConta)
 
         if(this.checkerNumberFormatting() === '+'){
             conta.classList.add("conta-credito")
@@ -57,11 +74,13 @@ class SaveAccounts{
             conta.classList.add("conta-debito")
         }
 
-        conta.addEventListener('click', function(e){
-            let clickedElement = e.target
-            let clickedElementId = e.target.classList[0]
+        imgTrash.addEventListener('click', function(e){
+            const clickedElement = e.target
+            const boxClickedElement = clickedElement.parentNode
 
-            containerContas.removeChild(clickedElement)
+            let clickedElementId = clickedElement.nextSibling.classList[0]
+            
+            containerContas.removeChild(boxClickedElement)
 
             const novoTeste = accounts.filter(e => e.id != clickedElementId)       
             accounts = novoTeste
