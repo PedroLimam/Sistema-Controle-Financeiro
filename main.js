@@ -59,6 +59,8 @@ class SaveAccounts{
         left: 0px;
         z-index: 2;
         `
+        
+        
         boxConta.appendChild(imgTrash)
 
         const conta = document.createElement("p")
@@ -77,13 +79,12 @@ class SaveAccounts{
         imgTrash.addEventListener('click', function(e){
             const clickedElement = e.target
             const boxClickedElement = clickedElement.parentNode
-
             let clickedElementId = clickedElement.nextSibling.classList[0]
             
             containerContas.removeChild(boxClickedElement)
 
-            const novoTeste = accounts.filter(e => e.id != clickedElementId)       
-            accounts = novoTeste
+            const filteredArray = accounts.filter(e => e.id != clickedElementId)       
+            accounts = filteredArray
             calcAccount(accounts)  
         })        
     }

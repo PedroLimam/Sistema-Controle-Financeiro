@@ -114,7 +114,6 @@ form button{
 .box-conta img{
     transition: all 400ms ease;
 }
-
 .box-conta img:hover{
     transform: translateY(-1px);
     opacity: 0.8;
