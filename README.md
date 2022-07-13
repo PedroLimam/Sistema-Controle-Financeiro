@@ -7,7 +7,7 @@ O projeto teve como foco criar um <strong>sistema de registro de contas</strong>
 
 <strong>Acesse: https://pedrolimam.github.io/Sistema-Controle-Financeiro/ </strong>
 
-# Para o desenvolvimento da aplicação foi utilizado alguns <strong>conhecimentos de JavaScript</strong>, listo a seguir:
+# <strong>Conhecimentos de JavaScript utilizados:</strong>
 
 <strong>-Manipulação de DOM:</strong> acessar elementos da DOM, criar novos elementos, inclui-los e exclui-los da DOM.
 
