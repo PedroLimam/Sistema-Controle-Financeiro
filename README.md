@@ -1,7 +1,7 @@
 # # Sistema-Controle-Financeiro
 
-O projeto teve como foco criar um sistema de registro de contas de natureza devedora ou credora, a aplicação registra cada conta com seu valor e nome em uma caixa com um identificador visual do lado esquerdo da conta, azul para crédito e vermelho pra débito, três contas são calculadas, sendo faturamento, creditos e debitos.
-
+O projeto teve como foco criar um <strong>sistema de registro de contas</strong> de natureza devedora ou credora, a aplicação registra cada conta com seu valor e nome em uma caixa com um identificador visual do lado esquerdo da conta, azul para crédito e vermelho pra débito, três contas são calculadas, sendo faturamento, creditos e debitos.
+<strong> </strong>
 
 <img width="400px" heigth="400px" src="https://user-images.githubusercontent.com/98844522/178559950-7d04513e-c012-4487-b041-7d5ab0cb56b4.png" alt="imagem do projeto sistema de controle de contas">
 
