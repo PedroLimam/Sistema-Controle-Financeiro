@@ -9,7 +9,7 @@ O projeto teve como foco criar um <strong>sistema de registro de contas</strong>
 
 # <strong>Conhecimentos de JavaScript utilizados:</strong>
 
-<strong>-Manipulação de DOM:</strong> acessar elementos da DOM, criar novos elementos, inclui-los e exclui-los da DOM.
+<strong>-Manipulação do DOM:</strong> acessar elementos do DOM, criar novos elementos, inclui-los e exclui-los do DOM.
 
 <strong>-Manipulação de CSS:</strong> acessar, manipular ou acrescentar CSS a elementos a partir do contexto incluido através de JavaScript.
 
